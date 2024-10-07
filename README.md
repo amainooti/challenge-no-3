@@ -1,7 +1,3 @@
-# Writing the README content as markdown format
-
-readme_content = """
-
 # Weather App - Backend Challenge
 
 This is a weather application built as part of the **20 Backend Challenge**. The app provides real-time weather data for various cities using a third-party weather API. The app implements caching using **Redis** to minimize external API requests and improve response times for frequently queried cities. The backend is developed using **NestJS**, with caching and HTTP request functionalities integrated.

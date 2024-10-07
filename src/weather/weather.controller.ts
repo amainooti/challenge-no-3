@@ -1,11 +1,13 @@
-import { Controller, Get, Param } from '@nestjs/common';
+import { Controller, Get, Param, Query } from '@nestjs/common';
 import { WeatherService } from './weather.service';
+import { CacheTTL } from '@nestjs/cache-manager';
 
 @Controller('weather')
 export class WeatherController {
   constructor(readonly weatherService: WeatherService) {}
-  @Get(':city')
-  getAll(@Param('city') city: string) {
+  @CacheTTL(30) // override TTL to 30 seconds
+  @Get()
+  getAll(@Query('city') city: string) {
     return this.weatherService.getWeather(city);
   }
 }

@@ -181,6 +181,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
+## Credits
+
+This project idea is taken from [roadmap.sh](https://roadmap.sh/projects/weather-api-wrapper-service).
+
+
 ### Final Notes:
 
 - This weather app is built for the **20 Backend Challenge** and focuses on essential backend functionalities like API integration, caching, and error handling.
